@@ -385,6 +385,42 @@ h6 {
   background: #e43c5c;
   border: 2px solid #e43c5c;
 }
+#hero .btn-get-started-twitter {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 9px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-get-started-twitter:hover {
+  background:#1DA1F2;
+  border: 2px solid#1DA1F2;
+}
+#hero .btn-get-started-instagram {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 9px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-get-started-instagram:hover {
+  background: #8a3ab9;
+  border: 2px solid #8a3ab9;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;

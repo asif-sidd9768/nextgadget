@@ -1,0 +1,22 @@
+{
+  "name": "nextgadget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asif-sidd9768/nextgadget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asif-sidd9768/nextgadget/issues"
+  },
+  "homepage": "https://github.com/asif-sidd9768/nextgadget#readme",
+  "dependencies": {
+    "gapi": "^0.0.3"
+  }
+}

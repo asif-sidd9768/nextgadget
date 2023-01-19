@@ -212,3 +212,42 @@
   });
 
 })()
+
+function youtubeVideos () {
+  const container = document.getElementById("youtube-container");
+
+  // Fetch latest videos from YouTube channel
+  fetch('http://homethings-env.eba-jx7f4c5m.ap-northeast-1.elasticbeanstalk.com/api/nextGadget')
+    .then(response => response.json())
+    .then(data => {
+      // Create a card for each video
+      data.items.forEach(item => {
+        // Create card element
+        const card = document.createElement("div");
+        card.classList.add("card");
+        // Create video thumbnail
+        const img = document.createElement("img");
+        img.src = item.snippet.thumbnails.high.url;
+        // Create video title
+        const h3 = document.createElement("h3");
+        h3.textContent = item.snippet.title;
+
+        const a = document.createElement("a")
+        var linkText = document.createTextNode("Watch on youtube");
+        a.appendChild(linkText)
+        a.classList.add("btn-get-started-youtube")
+        a.classList.add("scrollto")
+        a.title = "watch"
+        a.target = "_blank"
+        a.href = `https://www.youtube.com/watch?v=${item.id.videoId}`
+        // Append elements to card
+        card.appendChild(img);
+        card.appendChild(h3);
+        card.appendChild(a)
+        // Append card to container
+        container.appendChild(card);
+      });
+    });
+}
+
+youtubeVideos()

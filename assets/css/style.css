@@ -1782,3 +1782,147 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+#youtube-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1rem;
+  margin: 0 2rem;
+}
+
+/* CSS for card layout */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* CSS for video thumbnail */
+.card img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+/* CSS for video title */
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #youtube-container {
+    display: grid ;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #youtube-container {
+    display: grid ;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 2rem;
+  }
+
+  .card img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 628px) {
+  #youtube-container {
+    display: grid ;
+    grid-template-columns: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  #youtube-container {
+    display: grid ;
+    grid-template-columns: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  #youtube-container {
+    display: grid ;
+    grid-template-columns: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 2rem;
+  }
+  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+}
+
+.btn-get-started-youtube {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px 9px 20px;
+  margin-top: 8px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #000;
+  color: #000;
+}
+.btn-get-started-youtube:hover {
+  background: #e43c5c;
+  color: #fff;
+  border: 2px solid #e43c5c;
+}
